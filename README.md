@@ -1,2 +1,2 @@
 # EventAdvisor
-Read me
+This is our first project
