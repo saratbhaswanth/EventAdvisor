@@ -1,5 +1,5 @@
 <?php
-include_once "settings.php";
+include "settings.php";
 
 $connection=new mysqli(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME);
 if ($connection->connect_errno) {
