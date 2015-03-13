@@ -57,7 +57,7 @@ body{
 	border:6px solid rgba(221, 218, 215, 0.23);
 }
 form {
-	padding:25% 2.5em 12% 2.5em;
+	padding:20% 2.5em 12% 2.5em;
 }
 form li{
 	border:1px solid #B4B2B2;
@@ -88,7 +88,7 @@ form li{
 .lock{
 	background: url(../images/icons.png) no-repeat -17px 11px;
 }
-input[type="text"], input[type="password"] {
+.gender, input[type="text"], input[type="email"],input[type="date"], input[type="password"] {
 	font-family: 'Open Sans', sans-serif;
 	width:60%;
 	padding:0.7em 2em 0.7em 1.7em;
@@ -106,7 +106,7 @@ form li:hover{
 	 -o-box-shadow: 0 0 1em #40A9DF;
 	 -moz-box-shadow: 0 0 1em #40A9DF;
 }
-input[type="submit"]{
+input[type="button"], input[type="submit"]{
 	float:right;
 	font-size:18px;
 	display: inline-block;
@@ -137,7 +137,7 @@ input[type="submit"]{
 	<!-- background: linear-gradient(to bottom,  #ffe49e 0%,#ffb700 3%,#ffad00 35%,#ff9000 97%,#e27f00 100%); /* W3C */ -->
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe49e', endColorstr='#e27f00',GradientType=0 ); /* IE6-9 */
 }
-input[type="submit"]:hover{
+input[type="button"]:hover, input[type="submit"]:hover{
 	background: #e27f00; /* Old browsers */
 	background: -moz-linear-gradient(top,  #e27f00 0%, #ff9000 3%, #ffad00 65%, #ffb700 97%, #ffe49e 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e27f00), color-stop(3%,#ff9000), color-stop(65%,#ffad00), color-stop(97%,#ffb700), color-stop(100%,#ffe49e)); /* Chrome,Safari4+ */
@@ -337,7 +337,7 @@ input[type="submit"]:hover{
 		font-size:15px;
 		padding: 0.5em 1em 0.5em 1em;
 	}
-	input[type="submit"]{
+	input[type="submit"], input[type="button"]{
 		float:none;
 		font-size: 15px;
 		padding: 10px 10px;
