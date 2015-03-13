@@ -52,35 +52,41 @@
 					</div>
 					<p id="login_toggle" style="padding: 5% 5% 0% 5%;" >Wanna go back...</p>
 				<form action="register.php" method="post" style="padding: 10% 2.5em 12% 2.5em;">
-					<li>
-						<input type="text" class="text" name="firstname" id="firstname" placeholder="First Name" required >
+					<div style="display:flex">
+					<li style="width:20%; margin-right:2px">
+						<!-- <input type="Gender" class="text" name="username" id="username" placeholder="Enter Username" required > -->
+						<select class="gender" name="gender" id="gender" style="width:100%;   padding: 0.7em 0em 0.7em 0em;">
+							<option value="none">Mr</option>
+							<option value="female_single">Ms</option>
+							<option value="female_married">Mrs</option>
+						</select>
 					</li>
 					<li>
+						<input type="text" class="text" name="username" id="username" placeholder="User Name" required >
+					</li>
+				</div>	
+					<li>
+						<input type="password" class="text" name="password" id="password" placeholder="Password" required >
+					</li>
+					<!-- <li>
 						<input type="text" class="text" name="lastname" id="lastname" placeholder="Last Name" required >
-					</li>
+					</li> -->
 					<li>
-						<input type="email" class="text" name="Email" id="email" placeholder="Email" required >
+						<input type="email" class="text" name="Email" id="email" placeholder="Email" required>
 					</li>
 					<li>
 						<input type="text" class="text" name="phonenumber" id="phonenumber" maxlength="11" placeholder="PhoneNumber" required >
 					</li>
-					<li>
-						<!-- <input type="Gender" class="text" name="username" id="username" placeholder="Enter Username" required > -->
-						<select class="gender" name="gender" id="gender">
-							<option value="none">None</option>
-							<option value="female">Female</option>
-							<option value="male">Male</option>
-						</select>
-					</li>
-					<li>
+					
+					<!-- <li>
 						<input type="date" class="text" name="dob" id="dob" placeholder="Date Of Birth" >
-					</li>
-					<li>
+					</li> -->
+					<!-- <li>
 						<input type="text" class="text" name="city" id="city" placeholder="City" >
-					</li>
-					<li>
+					</li> -->
+					<!-- <li>
 						<input type="text" class="text" name="location" id="location" placeholder="Location" >
-					</li>
+					</li> -->
 					<div class="p-container">
 								<!-- <label class="checkbox"><input type="checkbox" name="checkbox" checked><i></i>Remember Me</label> -->
 								<input type="submit" onclick="myFunction()" value="Register" >
