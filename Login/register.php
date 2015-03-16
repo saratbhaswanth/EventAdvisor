@@ -6,23 +6,29 @@ if ($connection->connect_errno) {
     printf("Connect failed: %s\n", $connection->connect_error);
     exit();
 }
-$firstname = $connection->real_escape_string($_POST['firstname']);
-$lastname = $connection->real_escape_string($_POST['lastname']);
+
+$username = $connection->real_escape_string($_POST['username']);
+$password = $connection->real_escape_string($_POST['password']);
+$password = md5($password);
 $Email = $connection->real_escape_string($_POST['Email']);
 $phonenumber = $connection->real_escape_string($_POST['phonenumber']);
 $gender = $connection->real_escape_string($_POST['gender']);
-$dob = $connection->real_escape_string($_POST['dob']);
-$city = $connection->real_escape_string($_POST['city']);
-$location = $connection->real_escape_string($_POST['location']);
-$insert_query = "INSERT INTO login_details (firstname,lastname,email,phonenumber,gender,dob,city,location) ";
-$insert_query .=" VALUES ('$firstname','$lastname','$Email','$phonenumber','$gender','$dob','$city','$location')";
+
+if($username =="" ||$password =="" ||$Email =="" ||$phonenumber ==""){
+	echo "<meta http-equiv='refresh' content='0;url=UserLoginRegister.html?status=incomplete'>";
+	die();
+}
+
+$insert_query = "INSERT IGNORE INTO user_details (username,password,email,phonenumber,gender) ";
+$insert_query .=" VALUES ('$username','$password','$Email','$phonenumber','$gender')";
 $insert_result = $connection->query($insert_query);
 
-if(!$insert_result) {
-    die("Failed");
+if($connection->affected_rows > 0){
+	echo "SUCCESS";
 }
-else {
-    echo "SUCCESS";
+else{
+	echo "<meta http-equiv='refresh' content='0;url=UserLoginRegister.html?status=duplicate'>";
+	die();
 }
 
 $connection->close();
