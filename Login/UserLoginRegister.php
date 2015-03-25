@@ -15,14 +15,19 @@
 		<!--//webfonts-->
 </head>
 <body>
+	<?php echo file_get_contents("../header.php"); ?>
+	<div class="outer_div">
 	
 				 <!-----start-main---->
 				<div id="login_form" class="login-form">
 					<div class="head">
-						<img src="/images/rsz_admin.jpg" alt=""/>
+						<img class="login_logo" src="/images/logo6.jpg" alt=""/>
 						
 					</div>
 				<form action="ValidateLogin.php" method="post">
+					<div name="error_div" id="error_div" style="display:none; color:red">
+						Invalid credentials
+					</div>
 					<li>
 						<input type="text" class="text" name="username" id="username" placeholder="Enter Username" required ><a href="#" class=" icon user"></a>
 					</li>
@@ -47,11 +52,14 @@
 				 <!-----start-main---->
 				<div name="register_form" id="register_form" class="login-form" name="login-form" style="display:none">
 					<div class="head">
-						<img src="/images/mem2.jpg" alt=""/>
+						<img class="login_logo" src="/images/logo6.jpg" alt=""/>
 						<!-- <label class="login_toggle" style="width:100%"><input class="login_toggle" type="button" id="login_toggle" value="Login" style="margin-right: 20%; width:40% "><i></i>wanna go back</label><br> -->
 					</div>
 					<p id="login_toggle" style="padding: 5% 5% 0% 5%;" >Wanna go back...</p>
 				<form action="register.php" method="post" style="padding: 10% 2.5em 12% 2.5em;">
+					<div name="duplicate_div" id="duplicate_register_div" style="display:none; color:red">
+						
+					</div>
 					<div style="display:flex">
 					<li style="width:20%; margin-right:2px">
 						<!-- <input type="Gender" class="text" name="username" id="username" placeholder="Enter Username" required > -->
@@ -102,6 +110,7 @@
 					</div>
 				<!-----//end-copyright---->
 				</div>
-<?php echo file_get_contents("../footer.php") ?>
+</div>
+<?php echo file_get_contents("../footer.php"); ?>	
 </body>
 </html>
