@@ -1,0 +1,37 @@
+.footer_outer_rd{
+  margin-top:1%;
+  font-size:13px;
+  color:#333;
+  clear:both
+}
+.footer_rd{
+  background:#eee;
+  padding:5px;
+  box-shadow:0 1px 2px #BBB;
+  border-top:1px solid #e3e3e3
+}
+.footerextrainfo_rd{
+  padding:7px
+}
+.footer_outer_rd .leftinfo{
+  text-align:center
+}
+.footer_outer_rd .rightinfo{
+  text-align:center
+}
+.footer_rd .rightmenu{
+  text-align:center
+}
+.footer_rd .rightmenu a{
+  border-right:1px solid #aaa;
+  padding:0 5px;
+  text-decoration:none;color:#333
+}
+.footer_rd .rightmenu a:hover{
+  text-decoration:underline;
+  color:#111
+}
+.footer_rd .rightmenu a.last{
+  border-right:0;
+  padding-right:0
+}
