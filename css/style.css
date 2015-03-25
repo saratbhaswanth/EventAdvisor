@@ -28,6 +28,7 @@ nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
 img{max-width:100%;}
 /*end reset*/
 /****-----start-body----****/
+
 body{
 	background:url(../images/admin_bg.jpg)  no-repeat center fixed;
 	-webkit-background-size: cover;
@@ -54,12 +55,13 @@ body{
 	-webkit-border-radius:50%;
 	-o-border-radius:50%;
 	-moz-border-radius:50%;
-	border:6px solid rgba(221, 218, 215, 0.23);
+	border:6px solid rgba(221, 218, 215, 0.75);
 }
-form {
+
+.outer_div form {
 	padding:20% 2.5em 12% 2.5em;
 }
-form li{
+.outer_div form li{
 	border:1px solid #B4B2B2;
 	list-style:none;
 	margin-bottom:25px;
@@ -85,10 +87,15 @@ form li{
 	background: url(../images/icons.png) no-repeat 12px 11px;
 	
 }
+.login_logo{
+	height: 115px;
+	width:115px;
+}
+
 .lock{
 	background: url(../images/icons.png) no-repeat -17px 11px;
 }
- input[type="text"], input[type="date"], input[type="password"] {
+ .outer_div input[type="text"], input[type="date"], input[type="password"] {
 	font-family: 'Open Sans', sans-serif;
 	width:60%;
 	padding:0.7em 2em 0.7em 1.7em;
@@ -101,7 +108,7 @@ form li{
 	}
 
 
-.gender,input[type="email"] {
+.gender,.outer_div input[type="email"] {
 	font-family: 'Open Sans', sans-serif;
 	width:85%;
 	padding:0.7em 2em 0.7em 1.7em;
@@ -112,14 +119,14 @@ form li{
 	border:none;
 	font-weight:600;
 	}
-form li:hover{
+.outer_div form li:hover{
 	border:1px solid #40A9DF;
 	 box-shadow: 0 0 1em #40A9DF;
 	 -webkit-box-shadow: 0 0 1em #40A9DF;
 	 -o-box-shadow: 0 0 1em #40A9DF;
 	 -moz-box-shadow: 0 0 1em #40A9DF;
 }
-input[type="button"], input[type="submit"]{
+.outer_div input[type="button"], input[type="submit"]{
 	float:right;
 	font-size:18px;
 	display: inline-block;
@@ -150,7 +157,7 @@ input[type="button"], input[type="submit"]{
 	<!-- background: linear-gradient(to bottom,  #ffe49e 0%,#ffb700 3%,#ffad00 35%,#ff9000 97%,#e27f00 100%); /* W3C */ -->
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe49e', endColorstr='#e27f00',GradientType=0 ); /* IE6-9 */
 }
-input[type="button"]:hover, input[type="submit"]:hover{
+.outer_div input[type="button"]:hover, input[type="submit"]:hover{
 	background: #e27f00; /* Old browsers */
 	background: -moz-linear-gradient(top,  #e27f00 0%, #ff9000 3%, #ffad00 65%, #ffb700 97%, #ffe49e 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e27f00), color-stop(3%,#ff9000), color-stop(65%,#ffad00), color-stop(97%,#ffb700), color-stop(100%,#ffe49e)); /* Chrome,Safari4+ */
