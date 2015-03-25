@@ -103,6 +103,6 @@
 				<!-----//end-copyright---->
 				</div>
 
-		 		
 </body>
+<?php echo file_get_contents("../footer.php") ?>		 		
 </html>
