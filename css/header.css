@@ -4,7 +4,6 @@ border-bottom: 1px solid #ddd;
 min-width:978px;
 height: 48px;
 }
-
 .main_site_logo{
   width: 15%;
 }
@@ -291,7 +290,7 @@ border-color: #04c #04c #002a80;
 				
 
 
-body
+.header body
 {
 	background:#fff;
 }
@@ -851,9 +850,10 @@ background-color:#397DFA
 	-webkit-transition: 0.2s background;
 	-moz-transition: 0.2s background;
 }
-#signup_btn_topPanel:hover{
-	background: red ;
-	background: rgb(220, 59, 6);
+ #signup_btn_topPanel:hover{
+	/*background: red ;
+	background: rgb(220, 59, 6);*/
+  background: linear-gradient(to bottom, #0066ff 0%, #0066ff 3%, #0099FF 35%, #0099FF 97%, #0099FF 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 #login_btn_topPanel{
 	 font-size: 11px;font-weight: bold;font-weight: bold;color: #727272;cursor: pointer;text-decoration: none;
