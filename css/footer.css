@@ -2,7 +2,8 @@
   margin-top:1%;
   font-size:13px;
   color:#333;
-  clear:both
+  clear:both;
+  
 }
 .footer_rd{
   background:#eee;
@@ -14,7 +15,8 @@
   padding:7px
 }
 .footer_outer_rd .leftinfo{
-  text-align:center
+  text-align:center;
+  padding-bottom: 0.5%;
 }
 .footer_outer_rd .rightinfo{
   text-align:center
