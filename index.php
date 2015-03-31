@@ -5,6 +5,7 @@
     <title>Our Solution for your Occasion | Event Advisor</title>
     <meta charset="utf-8">
     <link href="/css/stylesheet.css" rel='stylesheet' type='text/css' />
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,300,100,300italic" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="application/x-javascript">
         addEventListener("load", function () {
@@ -52,9 +53,34 @@
             </div>
         </div>
     </section>
-    <!--<section class="main-categories">
-        The HTML
+    <section class="main-categories">
+        <div class="main-categories-heading">
+            Write some matter here
+        </div>
         <div class="group">
+            <div class="sub-group category-1" name="category-1">
+                <div class="group-title">category-1<span class="group-more"><a href="#">more</a>
+                </span>
+                </div>
+
+                <div class="col span_1_of_4">
+                    1 of 4
+                </div>
+                <div class="col span_1_of_4">
+                    1 of 4
+                </div>
+                <div class="col span_1_of_4">
+                    1 of 4
+                </div>
+                <div class="col span_1_of_4">
+                    1 of
+                </div>
+            </div>
+            <div class="sub-group category-2" name="category-2">
+                <div class="group-title">category-2<span class="group-more"><a href="#">more</a>
+                </span>
+                </div>
+            </div>
             <div class="col span_1_of_4">
                 1 of 4
             </div>
@@ -68,7 +94,8 @@
                 1 of
             </div>
         </div>
-    </section>-->
+        </div>
+    </section>
     <!--<?php echo file_get_contents( "footer.php"); ?>-->
 </body>
 
