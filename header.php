@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<link href="css/header.css" rel='stylesheet' type='text/css' />
+	<link href="/css/header.css" rel='stylesheet' type='text/css' />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<!--webfonts-->
@@ -16,7 +16,7 @@
 		<div style="margin:0" class="innerHeader">
 			<a href="/">
 				<div style="background:none;" class="logo6">
-					<img class="main_site_logo" title="Easy Solution for any Occasion | Event Advisor" alt="Event Advisor - logo" src="images/eventAdvisor_logo.jpg">
+					<img class="main_site_logo" title="Easy Solution for any Occasion | Event Advisor" alt="Event Advisor - logo" src="/images/eventAdvisor_logo.jpg">
 				</div>
 			</a>
 			<div class="outer_table_div">

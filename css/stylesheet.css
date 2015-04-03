@@ -13,7 +13,7 @@ html body {
     height: 70%;
     width: 100%;
     margin: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/custom-search.gif);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/custom-search.gif");
     background-size: cover;
 /*    background-position-y: -188px;*/
     height: 60vh;
@@ -51,7 +51,7 @@ html body {
 
 .search-subheading {
     font-size: 25px;
-    font-weight: 300;
+    font-weight: 400;
     color: #92FBFF;
     padding: 1% 0;
 }
@@ -117,7 +117,7 @@ select {
 
 .styled-select {
     overflow: hidden;
-    background: url(../images/down_arrow_select.jpg) no-repeat right #ddd;
+    background: url("/images/down_arrow_select.jpg") no-repeat right #ddd;
     border: 1px solid #ccc;
 }
 
