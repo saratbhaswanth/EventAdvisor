@@ -1,4 +1,4 @@
-<link href="/css/footer.css" rel='stylesheet' type='text/css' />
+<link href="css/footer.css" rel='stylesheet' type='text/css' />
 <div class="footer_outer_rd">
         <div class="footer_rd">
                 <div class="wrapperwide">
