@@ -4,9 +4,9 @@
     <head>
         <title>Weddings | Event Advisor</title>
         <meta charset="utf-8">
-        <link href="../css/stylesheet.css" rel='stylesheet' type='text/css' />
+        <link href="../../css/stylesheet.css" rel='stylesheet' type='text/css' />
 
-        <script src="../scripts/jquery-2.1.3.min.js"></script>
+        <script src="../../scripts/jquery-2.1.3.min.js"></script>
         <link href="http://fonts.googleapis.com/css?family=Lato:400,300,100,300italic" rel="stylesheet" type="text/css">
 
         <script type=" text/javascript " src="../scripts/application.js"></script>
@@ -14,7 +14,7 @@
     </head>
 
     <body>
-        <?php echo file_get_contents( "../header.php"); ?>
+        <?php echo file_get_contents( "../../header.php"); ?>
         <div class="body-index">
             <section class="main-categories ">
                 <div class="main-categories-heading ">
@@ -94,7 +94,7 @@
                 </div>
             </section>
         </div>
-    <?php echo file_get_contents( "../footer.php"); ?>
+    <?php echo file_get_contents( "../../footer.php"); ?>
     </body>
 
 </html>

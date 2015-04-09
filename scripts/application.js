@@ -76,5 +76,14 @@ $(document).ready(function () {
       	$("#duplicate_register_div").innerHtml("invalid input");
      	$("#duplicate_register_div").show();
      }; */
+    
+    /*---------------Navigate to Specific Url based on Dropdown----------------------*/
+    $("#search-submit-button").click(function(){
+        var category = $('#category_home').val();
+        var sub_category = $('#subcategory_home').val();
+        alert(category + " " + sub_category);
+        window.location.href = "/" + "category/" + category + "/" + sub_category;
+    });     
+    
 
 });

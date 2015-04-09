@@ -92,7 +92,7 @@ $json = "{";
                                 }
                             ?>
                         </select>
-                        <input class="search-submit-button " type="submit " value="Search ">
+                        <input class="search-submit-button" id="search-submit-button" name="search-submit-button" type="submit" value="Search ">
                     </form>
                 </div>
             </div>
